@@ -7,16 +7,13 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Firebase -->
+    
     <script type="module">
         import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js';
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
         import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js';
         import { getFirestore, collection, addDoc, getDocs, doc, updateDoc, deleteDoc } from 'https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js';
         import { getStorage, ref, uploadBytes, getDownloadURL } from 'https://www.gstatic.com/firebasejs/12.1.0/firebase-storage.js';
-
-
-  //web app's Firebase configuration
 
   const firebaseConfig = {
     apiKey: "AIzaSyA9jI4JSmxhr1A-UD7bVlqU2DPvbmdpx3M",
@@ -28,13 +25,13 @@
     measurementId: "G-99NVHXV14N"
   };
 
-        // Initialize Firebase
+        
         const app = initializeApp(firebaseConfig);
         window.auth = getAuth(app);
         window.db = getFirestore(app);
         window.storage = getStorage(app);
         
-        // Make Firebase functions globally available
+        
         window.signInWithEmailAndPassword = signInWithEmailAndPassword;
         window.createUserWithEmailAndPassword = createUserWithEmailAndPassword;
         window.signOut = signOut;
@@ -50,7 +47,6 @@
         window.getDownloadURL = getDownloadURL;
  
  </script>
-    
     
     <script>
         tailwind.config = {
@@ -1518,8 +1514,7 @@
                         </div>
                         <h3 class="product-title text-2xl mb-4">MISSÃO</h3>
                         <p class="text-gray-600 leading-relaxed">
-                            Democratizar o acesso ao design gráfico de qualidade, oferecendo soluções criativas 
-                            e profissionais com preços justos para todos os tipos de negócios.
+                          Transformar peças de roupa em algo único, criado com a identidade do cliente.
                         </p>
                     </div>
 
@@ -1529,8 +1524,7 @@
                         </div>
                         <h3 class="product-title text-2xl mb-4">VISÃO</h3>
                         <p class="text-gray-600 leading-relaxed">
-                            Ser reconhecida como a principal referência em design gráfico acessível no Brasil, 
-                            ajudando pequenos e médios negócios a crescerem com identidade visual profissional.
+                            Levar a moda globalmente, buscando o autoconhecimento e identidade visual do cliente.
                         </p>
                     </div>
 
@@ -1540,10 +1534,7 @@
                         </div>
                         <h3 class="product-title text-2xl mb-4">VALORES</h3>
                         <div class="text-gray-600 space-y-2">
-                            <div>• Qualidade acessível</div>
-                            <div>• Transparência nos preços</div>
-                            <div>• Atendimento humanizado</div>
-                            <div>• Compromisso com prazos</div>
+                            <div>Se atentar as necessidades do cliente, com respeito e ética, tendo compromisso, responsabilidade e qualidade</div>
                         </div>
                     </div>
                 </div>
